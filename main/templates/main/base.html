@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CRUD- operation</title>
+        <link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+    </head>
+    <body> 
+        <div class="container mt-5">
+            <h2 class="text-center alert alert-danger">CRUD operation, Add, Edit and Delete data</h2>
+            {% block content  %}{% endblock content  %}
+        </div>
+        
+        
+        <script src="{% static 'main/js/popper.js' %}"></script>
+        <script src="{% static 'main/js/jquery.js' %}"></script>
+        <script src="{% static 'main/js/bootstrap.js' %}"></script>
+    </body>
+</html>
